@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <title>Assisgnment-5</title>
+    <script src="./UI21CS43ass5.js"></script>
+    <link rel="stylesheet" href="UI21CS43ass5.css">
+</head>
+<body style="background-color:rgb(251, 255, 36);" onload="tdate();">
+    <h1 style="text-align:center; ">Student Registration Form</h1>
+    <form onsubmit="return validate();">
+        <table style="width:30%" align="center">
+            <tr>
+                <th style="font-size:120%;"><pre>Name:</pre></th>
+                <td>&nbsp;<input type="text" id="uname" placeholder="Student's name  Father's name  Surname" style="background-color:rgb(188, 188, 237);border: 0px;border-radius:20px;width:96%;height:30px;padding-left: 12px;"></td>
+            </tr>
+            <tr>
+                <th style="font-size:120%;"><pre>Address:</pre></th>
+                <td><textarea placeholder="Enter Your Address" id="address" style="background-color:rgb(188, 188, 237);border: 0px;min-height:42px;max-height:300px;max-width:500px;min-width:500px;margin:5px;border-radius:20px;padding-left: 12px;padding-top:25;"></textarea></td>
+            </tr>
+            <tr>
+                <th style="font-size:120%;"><pre>Birthdate:</pre></th>
+                <td>&nbsp;<input type="date" id="birthdate" style="background-color:rgb(188, 188, 237);border: 0px;border-radius:20px;width:96%;height:30px;padding-left: 12px;" ></td>
+            </tr>
+            <tr>
+                <th style="font-size:120%;"><pre>Mobile no:</pre></th>
+                <td>&nbsp;<input type="number" placeholder="Enter Your Mobile Number" id="mnumber" style="background-color:rgb(188, 188, 237);border: 0px;border-radius:20px;width:96%;height:30px;padding-left: 12px;" maxlength="10" minlength="10"></td>
+            </tr>
+            <tr>
+                <th style="font-size:120%;"><pre>Email-ID:</pre></th>
+                <td>&nbsp;<input type="text" placeholder="Enter Your Mail - Id" id="emailid"  style="background-color:rgb(188, 188, 237);border: 0px;border-radius:20px;width:96%;height:30px;padding-left: 12px;"></td>
+            </tr>
+            <tr>
+                <th style="font-size:120%;"><pre>Hobbies:</pre></th>
+                <td>&nbsp;Gaming<input type="Checkbox" value="Gaming" name="hobby">&emsp;&ensp;Study<input type="Checkbox" value="Study" name="hobby">&emsp;&ensp;Reading<input type="Checkbox" value="Reading" name="hobby">&emsp;&ensp;Others<input type="Checkbox" value="Others" name="hobby"></td>
+            </tr>.+
+            <tr>
+                <th style="font-size:120%;"><pre>Gender:</pre></th>
+                <td>&nbsp;Male<input type="radio" value="Male" name="gender" checked>&emsp;&ensp;Female<input type="radio" value="Female" name="gender">&emsp;&ensp;Others<input type="radio" value="Other" name="gender"></td>
+            </tr>
+            <tr>
+                <th style="font-size:120%;"><pre>Semester:</pre></th>
+                <td>&nbsp;
+                    <select name="semester" id="sem" style="width:220px;">
+                        <option value="selectsemester">Select your Semester & Year</option>
+                        <option value="First">1st Semester - 1st Year</option>
+                        <option value="Second">2nd Semester - 1st Year</option>
+                        <option value="Third">3rd Semester - 2nd Year</option>
+                        <option value="Fourth">4th Semester  - 2nd Year</option>
+                        <option value="Five">5th Semester - 3rd Year</option>
+                        <option value="Six">6th Semester - 3rd Year</option>
+                        <option value="Seven">7th Semester  - 4th Year</option>
+                        <option value="Eight">8th Semester  - 4th Year</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <th style="font-size:120%;"><pre>Languages Known:</pre></th>
+                <td>&nbsp;
+                    <select id="lang" multiple> 
+                        <option value="English" selected>English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Gujarati">Gujarati</option>
+                        <option value="French">French</option>
+                        <option value="Other">Others</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <th style="font-size:120%;"><pre>Password:</pre></th>
+                <td>&nbsp;<input type="password" id="pass" placeholder=" Enter Password" style="background-color:rgb(167, 167, 255);border: 0px;border-radius:20px;width:96%;height:30px;padding-left: 12px;"></td>
+            </tr>
+            <tr>
+                <th style="font-size:120%;"><pre>Confirm Password:</pre></th>
+                <td>&nbsp;<input type="password" id="cpass" placeholder=" Enter Confirm Password" style="background-color:rgb(167, 167, 255);border: 0px;border-radius:20px;width:96%;height:30px;padding-left: 12px;"></td>
+            </tr>
+        </table>
+        <div style="text-align:center;margin-top:20px;margin-bottom:20px;"><input type="submit" value="Submit"  style="font-size:20px;margin-right:20px;border-radius:20px;width:120px;height:50px;background-color: rgb(88, 255, 116); border: 2px solid rgb(255, 54, 54);" class="hovering" ><input type="reset" value="Reset" style="font-size:20px;margin-left:20px;border-radius:20px;width:120px;height:50px; background-color: rgb(137, 255, 200); border: 2px solid rgb(255, 176, 176);" class="hovering"></div>
+    </form>
+    <p id="dname"></p>
+</body>
+</html>
